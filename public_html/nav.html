@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navigation (nav and menu)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p>Header goes here</p>
+
+        <nav>
+            <a href="header.html">Header</a> |
+            <a href="index.html">Home</a> |
+            <a href="nav.html">Navigation</a>
+        </nav>
+
+        <main style="border:1px solid #000;" contextmenu="custom-drop-down">
+            <p> your applictaion</p>
+            <menu type="context" id="custom-drop-down">
+                <menu label="New">
+                    <menuitem label="Window" onclick="window.open(window.location.href);"></menuitem>
+                </menu>
+                <menuitem label="Save" onclick="saveSomething();"></menuitem>
+            </menu>
+        </main>
+
+        <p>Content goes here...</p>
+    </body>
+</html>
